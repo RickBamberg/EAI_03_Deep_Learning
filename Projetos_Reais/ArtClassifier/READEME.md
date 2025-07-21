@@ -18,27 +18,27 @@ Criar um modelo de Deep Learning capaz de reconhecer o estilo artístico de uma 
 
 ## 📁 Estrutura do Projeto
 
-art_classifier/
-│
-├── app.py           # Aplicação Flask
-├── requirements.txt # Dependências do projeto
-├── README.md        # Documentação do projeto
-├── .gitignore
-│
-├── /models/ # Modelo e rótulos
-│ ├── art_style_classifier_best.keras
-│ └── class_names.json
-│
-├── /notebooks/
-│ └── ArtClassifier.ipynb # Treinamento e análise
-│
-├── /static/
-│ └── /uploads/ # Imagens enviadas via Flask
-│
-├── /templates/ # HTML da aplicação
-│ ├── index.html
-│ └── result.html
-
+art_classifier/  
+│  
+├── app.py           # Aplicação Flask  
+├── requirements.txt # Dependências do projeto  
+├── README.md        # Documentação do projeto  
+├── .gitignore  
+│  
+├── /models/ # Modelo e rótulos  
+│ ├── art_style_classifier_best.keras  
+│ └── class_names.json  
+│  
+├── /notebooks/  
+│ └── ArtClassifier.ipynb # Treinamento e análise  
+│  
+├── /static/  
+│ └── /uploads/ # Imagens enviadas via Flask  
+│  
+├── /templates/ # HTML da aplicação  
+│ ├── index.html  
+│ └── result.html  
+  
 
 ---
 
