@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador de Estilos de Arte</title>
+    <!-- Link para o nosso arquivo CSS externo -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container index-container">
+        <h1>Classificador de Estilos Artísticos</h1>
+        <p>Faça o upload da imagem de uma pintura para descobrir seu estilo artístico.</p>
+        
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <div class="upload-btn-wrapper">
+                <button class="btn">Escolher uma Imagem</button>
+                <input type="file" name="file" id="fileInput" accept="image/*" required>
+            </div>
+            
+            <div id="fileName"></div>
+            
+            <button type="submit" id="submitBtn">Classificar Arte</button>
+        </form>
+    </div>
+
+    <!-- O JavaScript continua aqui -->
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const fileNameDisplay = document.getElementById('fileName');
+        const submitBtn = document.getElementById('submitBtn');
+
+        fileInput.addEventListener('change', function() {
+            if (this.files.length > 0) {
+                fileNameDisplay.textContent = `Arquivo selecionado: ${this.files[0].name}`;
+                submitBtn.style.display = 'inline-block';
+            } else {
+                fileNameDisplay.textContent = '';
+                submitBtn.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

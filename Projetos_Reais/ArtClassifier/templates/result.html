@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado da Classificação</title>
+    <!-- Link para o nosso arquivo CSS externo -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container result-container">
+        <h1>Resultado da Classificação</h1>
+        
+        <img src="{{ image_path }}" alt="Imagem Enviada">
+        
+        <h2>{{ prediction }}</h2>
+        
+        <a href="/">Classificar Outra Imagem</a>
+    </div>
+</body>
+</html>

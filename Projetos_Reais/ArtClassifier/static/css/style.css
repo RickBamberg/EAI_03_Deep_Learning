@@ -1,0 +1,128 @@
+/* --- Estilos Gerais --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1c2841;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #ffffff;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+}
+
+h1 {
+    color: #1c1e21;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Estilos para a página INDEX --- */
+.index-container {
+    max-width: 500px;
+}
+
+.index-container p {
+    color: #606770;
+    margin-bottom: 2rem;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.upload-btn-wrapper .btn {
+    border: 2px solid #1877f2;
+    color: #1877f2;
+    background-color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.upload-btn-wrapper:hover .btn {
+    background-color: #1877f2;
+    color: white;
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#submitBtn {
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    display: none; /* Escondido inicialmente */
+}
+
+#submitBtn:hover {
+    background-color: #36a420;
+}
+
+#fileName {
+    margin-top: 1rem;
+    color: #1c1e21;
+    font-style: italic;
+}
+
+/* --- Estilos para a página RESULT --- */
+.result-container {
+    max-width: 600px;
+}
+
+.result-container h1 {
+    margin-bottom: 2rem;
+}
+
+.result-container h2 {
+    color: #1877f2;
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+.result-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.result-container a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1877f2;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.result-container a:hover {
+    background-color: #166fe5;
+}
